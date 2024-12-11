@@ -210,7 +210,7 @@ const FormPage = () => {
               className="form-select"
               id="service"
               name="service"
-              value={formData.service}
+              value={formData.services}
               onChange={handleChange}
               required
             >
