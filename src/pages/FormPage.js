@@ -8,7 +8,7 @@ const FormPage = () => {
       name: '',
       number: '',
       email: '',
-      service: '',
+      services: '',
       date: '',
       time: '',
       location: '',
@@ -102,7 +102,7 @@ const FormPage = () => {
         form.append('name', formData.name);
     form.append('number', formData.number);
     form.append('email', formData.email);
-    form.append('service', formData.service);
+    form.append('service', formData.services);
     form.append('date', formData.date);
     form.append('time', formData.time);
     form.append('location', formData.location);
@@ -132,7 +132,7 @@ const FormPage = () => {
           name: '',
           number: '',
           email: '',
-          service: '',
+          services: '',
           date: '',
           time: '',
           location: '',
@@ -215,9 +215,9 @@ const FormPage = () => {
               required
             >
               <option value="">Choose...</option>
-              {serviceOptions.map((service, index) => (
-                <option key={index} value={service}>
-                  {service}
+              {serviceOptions.map((services, index) => (
+                <option key={index} value={services}>
+                  {services}
                 </option>
               ))}
             </select>
