@@ -115,9 +115,9 @@ const FormPage = () => {
     form.append("name", formData.name);
     form.append("number", formData.number);
     form.append("email", formData.email);
-    form.append("service", formData.service);
-    form.append("date", formData.date);
-    form.append("message", formData.message);
+    form.append("services", formData.service); // Change 'service' to 'services'
+    form.append("Date Time", `${formData.date} ${formData.time}`); // Combine date and time
+    form.append("location", formData.message); // Change 'message' to 'location'
 
     // Submit the form
     fetch(scriptURL, { method: "POST", body: form })
