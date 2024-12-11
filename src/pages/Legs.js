@@ -13,7 +13,7 @@ export default function Legs() {
           {/* SVG Icon Section */}
           <div className="col-md-1 ">
           <img
-                src="assets/assets/img/hands.png"
+                src="assets/assets/img/legs.png"
                 alt="Button Image"
                 style={{ width: "35px", height: "auto" }}
               />
