@@ -10,6 +10,7 @@ const FormPage = () => {
     email: "",
     service: "",
     date: "",
+    time: "",
     message: "",
   });
   const [serviceOptions, setServiceOptions] = useState([]);
@@ -251,7 +252,15 @@ const FormPage = () => {
 
           <div className="form-group">
             <label htmlFor="time">Select Time</label>
-            <input type="time" className="form-control" id="time" required />
+            <input
+              type="time"
+              className="form-control"
+              id="time"
+              name="time" // Add this
+              value={formData.time} // Add this
+              onChange={handleChange} // Add this
+              required
+            />
           </div>
 
           <div className="mb-3">
