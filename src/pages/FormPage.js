@@ -8,7 +8,7 @@ const FormPage = () => {
       name: '',
       number: '',
       email: '',
-      services: '',
+      service: '',
       date: '',
       time: '',
       location: '',
@@ -102,7 +102,7 @@ const FormPage = () => {
         form.append('name', formData.name);
     form.append('number', formData.number);
     form.append('email', formData.email);
-    form.append('service', formData.services);
+    form.append('service', formData.service);
     form.append('date', formData.date);
     form.append('time', formData.time);
     form.append('location', formData.location);
@@ -132,7 +132,7 @@ const FormPage = () => {
           name: '',
           number: '',
           email: '',
-          services: '',
+          service: '',
           date: '',
           time: '',
           location: '',
@@ -210,7 +210,7 @@ const FormPage = () => {
               className="form-select"
               id="service"
               name="service"
-              value={formData.services}
+              value={formData.service}
               onChange={handleChange}
               required
             >
