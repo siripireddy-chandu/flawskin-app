@@ -5,19 +5,21 @@ import Swal from 'sweetalert2';
 
 const FormPage = () => {
     const [formData, setFormData] = useState({
-        name: '',
-        number: '',
-        email: '',
-        service: '',
-        date: '',
-        message: '',
+      name: '',
+      number: '',
+      email: '',
+      service: '',
+      date: '',
+      time: '',
+      location: '',
+      message: '',
       });
       const [serviceOptions, setServiceOptions] = useState([]);
       const [loading, setLoading] = useState(false);
       const navigate = useNavigate();
       const location = useLocation();
     
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwL6z5OQSsHc-Uak3jsjJNBcWcQWZdmwFZiOcmIadYu2JGNiqGuchl1Si2xS_NW_ibD/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwvvnENhOK7KXZ1EPuSYUGihWw4dwrLXGbaSuHkQ7yZ9zGP7zFDApiXGwcWVKtLbB3W/exec';
       const serviceType = location.state?.serviceType || 'Trailsession';
       useEffect(() => {
         let options = [];
@@ -98,11 +100,13 @@ const FormPage = () => {
         // Prepare form data for submission
         const form = new FormData();
         form.append('name', formData.name);
-        form.append('number', formData.number);
-        form.append('email', formData.email);
-        form.append('service', formData.service);
-        form.append('date', formData.date);
-        form.append('message', formData.message);
+    form.append('number', formData.number);
+    form.append('email', formData.email);
+    form.append('service', formData.service);
+    form.append('date', formData.date);
+    form.append('time', formData.time);
+    form.append('location', formData.location);
+    form.append('message', formData.message);;
     
         // Submit the form
         fetch(scriptURL, { method: 'POST', body: form })
@@ -124,16 +128,16 @@ const FormPage = () => {
             });
     
             setLoading(false);
-    
-            // Reset the form and navigate to home
-            setFormData({
-              name: '',
-              number: '',
-              email: '',
-              service: '',
-              date: '',
-              message: '',
-            });
+        setFormData({
+          name: '',
+          number: '',
+          email: '',
+          service: '',
+          date: '',
+          time: '',
+          location: '',
+          message: '',
+        });
     
             navigate('/home');
           })
