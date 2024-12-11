@@ -19,7 +19,7 @@ const FormPage = () => {
       const navigate = useNavigate();
       const location = useLocation();
     
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwxrr9gY3hHl86SuG0uv8nQa0NJHnmqFYqzCzrqM0w4wWDuE-B--j9r9iwch5FHZK6o/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwvvnENhOK7KXZ1EPuSYUGihWw4dwrLXGbaSuHkQ7yZ9zGP7zFDApiXGwcWVKtLbB3W/exec';
       const serviceType = location.state?.serviceType || 'Trailsession';
       useEffect(() => {
         let options = [];
@@ -215,9 +215,9 @@ const FormPage = () => {
               required
             >
               <option value="">Choose...</option>
-              {serviceOptions.map((services, index) => (
-                <option key={index} value={services}>
-                  {services}
+              {serviceOptions.map((service, index) => (
+                <option key={index} value={service}>
+                  {service}
                 </option>
               ))}
             </select>
