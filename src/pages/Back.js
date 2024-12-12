@@ -144,7 +144,7 @@ export default function Back() {
                       <h5 className="modal-body text-bg-primary">Pre-laser care.</h5>
 
                       <div className="p-2">
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -161,9 +161,9 @@ export default function Back() {
                           />
                         </svg>
                         Avoid waxing or thereading prior to 15 days of service.
-                      </h6>
+                      </p>
 
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -181,9 +181,9 @@ export default function Back() {
                         </svg>
                         Avoid micro-needling,peels & bleaching prior to 7 days
                         of service.
-                      </h6>
+                      </p>
 
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -201,9 +201,9 @@ export default function Back() {
                         </svg>
                         Avoid the use of medicated creams like retinol &
                         steroids prior to 7 days of service.
-                      </h6>
+                      </p>
 
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -221,10 +221,10 @@ export default function Back() {
                         </svg>
                         Avoid the laser treatment of you have any
                         openbwounds,cuts,buruises or skin infections.
-                      </h6>
+                      </p>
 
                       <h5 className="modal-body text-bg-primary">Post-laser care.</h5>
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -242,9 +242,9 @@ export default function Back() {
                         </svg>
                         Apply high SPF sunscreens (at leat 50) & keep your skin
                         moisturised.
-                      </h6>
+                      </p>
 
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -262,9 +262,9 @@ export default function Back() {
                         </svg>
                         Use gentle skin products & refrain from pucking, waxing
                         or threading.
-                      </h6>
+                      </p>
 
-                      <h6>
+                      <p>
                         <svg
                           class="w-6 h-6 text-gray-800 dark:text-white"
                           aria-hidden="true"
@@ -282,7 +282,7 @@ export default function Back() {
                         </svg>
                         Avoid hot baths,saunas & super sweaty activities for at
                         least 2 days after each session.
-                      </h6>
+                      </p>
 
                       <div className="modal-footer"></div>
                     </div>
