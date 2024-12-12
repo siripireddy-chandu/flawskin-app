@@ -38,7 +38,7 @@ export default function FullBody() {
                 <li>Underarms</li>
                 <li>Bikini</li>
                 <p>
-                  Cost: <del>₹10,333</del> ₹9,999
+                  Cost: <del>₹10,333</del> ₹9,499
                 </p>
                 <p>
                   <svg

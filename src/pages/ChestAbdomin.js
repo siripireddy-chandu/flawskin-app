@@ -32,7 +32,7 @@ export default function ChestAbdomen() {
               >
                 <h6>Chest & Abdomin</h6>
                 <p>
-                  Cost: <del>₹4,275</del> ₹2,950
+                  Cost: <del>₹4,275</del> ₹2,999
                 </p>
                 <p>
                   <svg
