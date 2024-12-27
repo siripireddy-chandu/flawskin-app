@@ -21,6 +21,22 @@ const FormPage = () => {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbwL6z5OQSsHc-Uak3jsjJNBcWcQWZdmwFZiOcmIadYu2JGNiqGuchl1Si2xS_NW_ibD/exec";
   const serviceType = location.state?.serviceType || "Trailsession";
+
+  useEffect(() => {
+    const fetchBookedSlots = () => {
+      // Example: booked slots (you can replace this with actual data)
+      const bookedSlotsData = [
+        "2024-12-28 10:00",  // Sample booked slot
+        "2024-12-28 14:00",
+        "2024-12-29 09:00",
+      ];
+      setBookedSlots(bookedSlotsData);
+    };
+
+    fetchBookedSlots();
+  }, []);
+
+
   useEffect(() => {
     let options = [];
     if (serviceType === "Trailsession") {
@@ -86,7 +102,18 @@ const FormPage = () => {
     // Validation logic (as described previously)
     const number = formData.number;
     const numberPattern = /^[6-9]\d{9}$/;
-    const dateTime = formData.date;
+    `${formData.date} ${formData.time}`;
+
+    if (bookedSlots.includes(dateTime)) {
+      Swal.fire({
+        icon: "error",
+        title: "Slot Already Booked",
+        text: "The selected time slot is already booked. Please select another slot.",
+      });
+      setLoading(false);
+      return;
+    }
+
     const selectedDate = new Date(dateTime);
     const today = new Date();
     today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
