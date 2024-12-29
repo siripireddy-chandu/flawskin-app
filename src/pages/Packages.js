@@ -1618,7 +1618,7 @@ export default function Packages() {
               >
                 <h6>Full Front + Full Back</h6>
                 <p>
-                  Cost: <del>₹5,999 </del> ₹4,499
+                  Cost: <del>₹5,999 </del> ₹5,499
                 </p>
                 <p>
                   <svg
