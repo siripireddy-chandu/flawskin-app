@@ -15,6 +15,11 @@ const FormPage = () => {
   });
   const [serviceOptions, setServiceOptions] = useState([]);
   const [loading, setLoading] = useState(false);
+  const bookedSlots = [
+    { date: "2024-12-31", startTime: "12:00", endTime: "14:00" },
+    // Add more booked slots here
+  ];
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -76,6 +81,89 @@ const FormPage = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const checkSlotAvailability = (date, time) => {
+    // Parse selected time
+    const selectedTime = new Date(`1970-01-01T${time}:00`);
+
+    // Check for overlap with booked slots
+    const isOverlapping = bookedSlots.some((slot) => {
+      if (slot.date === date) {
+        const startTime = new Date(`1970-01-01T${slot.startTime}:00`);
+        const endTime = new Date(`1970-01-01T${slot.endTime}:00`);
+        return selectedTime >= startTime && selectedTime < endTime; // Overlapping
+      }
+      return false; // Different date
+    });
+
+    return !isOverlapping; // Return true if no overlap
+  };
+
+  const handleDateChange = (e) => {
+    const selectedDate = e.target.value;
+    setFormData({ ...formData, date: selectedDate });
+
+    if (formData.time) {
+      const isAvailable = checkSlotAvailability(selectedDate, formData.time);
+      if (!isAvailable) {
+        Swal.fire({
+          title: "Slot already booked",
+          html: `
+        <picture>
+          <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2639_fe0f/512.webp" type="image/webp">
+          <img 
+            src="https://fonts.gstatic.com/s/e/notoemoji/latest/2639_fe0f/512.gif" 
+            alt="☹" 
+            width="64" 
+            height="64" 
+            style="display: block; margin: 0 auto; animation: bounce 1s infinite;"
+          >
+        </picture>
+        <p style="margin-top: 10px;">This slot is already booked. Please select another time.</p>
+      `,
+          showConfirmButton: true,
+          confirmButtonText: "Okay",
+          customClass: {
+            popup: "swal-animated",
+          },
+        });
+        setFormData({ ...formData, time: "" });
+      }
+    }
+  };
+
+  const handleTimeChange = (e) => {
+    const selectedTime = e.target.value;
+    setFormData({ ...formData, time: selectedTime });
+
+    if (formData.date) {
+      const isAvailable = checkSlotAvailability(formData.date, selectedTime);
+      if (!isAvailable) {
+        Swal.fire({
+          title: "Slot already booked",
+          html: `
+            <picture>
+              <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2639_fe0f/512.webp" type="image/webp">
+              <img 
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/2639_fe0f/512.gif" 
+                alt="☹" 
+                width="64" 
+                height="64" 
+                style="display: block; margin: 0 auto; animation: bounce 1s infinite;"
+              >
+            </picture>
+            <p style="margin-top: 10px;">This slot is already booked. Please select another time.</p>
+          `,
+          showConfirmButton: true,
+          confirmButtonText: "Okay",
+          customClass: {
+            popup: "swal-animated",
+          },
+        });
+        setFormData({ ...formData, time: "" });
+      }
+    }
   };
 
   const handleSubmit = (e) => {
@@ -245,7 +333,7 @@ const FormPage = () => {
               id="date"
               name="date"
               value={formData.date}
-              onChange={handleChange}
+              onChange={handleDateChange}
               required
             />
           </div>
@@ -258,7 +346,7 @@ const FormPage = () => {
               id="time"
               name="time" // Add this
               value={formData.time} // Add this
-              onChange={handleChange} // Add this
+              onChange={handleTimeChange} // Add this
               required
             />
           </div>
@@ -366,6 +454,3 @@ const FormPage = () => {
 };
 
 export default FormPage;
-
-
-
