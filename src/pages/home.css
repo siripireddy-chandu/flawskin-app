@@ -1,5 +1,8 @@
 
 
+body.not-found-page {
+    background: #fff; /* Change this to your desired color */
+  }
 body {
 	
 	background: #8dcae4;

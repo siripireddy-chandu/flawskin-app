@@ -18,7 +18,7 @@ import Footer from './pages/Footer';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import AdminPortal from './pages/admin2002';
-
+import NotFoundPage from './pages/notfound';
 
 function App() {
   return (
@@ -45,6 +45,7 @@ function App() {
     <Route path="/Requestcall" element={<Requestcall />} />
     <Route path="/admin2002" element={<AdminPortal />} />
     <Route path="/form" element={<FormPage />} />
+    <Route path="*" element={<NotFoundPage />} />
  </Routes>
  </main>
       <Footer />
