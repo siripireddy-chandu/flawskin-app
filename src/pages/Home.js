@@ -265,7 +265,7 @@ export default function Home() {
       </div>
 <div className="text-center">
       <span className="badge rounded-pill bg-light text-dark border">Home Service Available Across
-      Banglore</span>
+      Bangalore</span>
       </div>
 
       <div
