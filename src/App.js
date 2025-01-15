@@ -17,7 +17,7 @@ import Requestcall from './pages/Requestcall';
 import Footer from './pages/Footer';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
-import AdminPortal from './pages/admin';
+import AdminPortal from './pages/admin2002';
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
     <Route path="/Packages" element={<Packages />} />
     <Route path="/Buttocks" element={<Buttocks />} />
     <Route path="/Requestcall" element={<Requestcall />} />
-    <Route path="/admin" element={<AdminPortal />} />
+    <Route path="/admin2002" element={<AdminPortal />} />
     <Route path="/form" element={<FormPage />} />
  </Routes>
  </main>
