@@ -8,95 +8,135 @@ export default function Home() {
     <div>
       <Navbar />
       <section>
-        
-          <div className="col-lg-12 col-md-12  pt-4">
-            <div
-              id="carouselExampleIndicators"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  className="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
+        <div className="col-lg-12 col-md-12  pt-4">
+          <div
+            id="carouselExampleIndicators"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
 
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    src="assets\assets\img\scroll1.png"
-                    className="d-block w-100 img-fluid"
-                    alt="First slide"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="assets\assets\img\scroll2.png"
-                    className="d-block w-100 img-fluid"
-                    alt="Second slide"
-                  />
-                </div>
-                {/* <div className="carousel-item">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  src="assets\assets\img\scroll1.png"
+                  className="d-block w-100 img-fluid"
+                  alt="First slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="assets\assets\img\scroll2.png"
+                  className="d-block w-100 img-fluid"
+                  alt="Second slide"
+                />
+              </div>
+              {/* <div className="carousel-item">
                   <img
                     src="assets\assets\img\hiring.png"
                     className="d-block w-100 img-fluid"
                     alt="Third slide"
                   />
                 </div> */}
-              </div>
-
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
             </div>
+
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
-       
+        </div>
       </section>
 
-      <div className="container p-3  text-white rounded mt-4 ">
+      <div className="container p-3  rounded mt-4 ">
+        <div className="d-flex align-items-center">
+          {/* Left Line */}
+          <div
+            style={{
+              flex: 1,
+              height: "2px",
+              backgroundColor: "white",
+            }}
+          ></div>
+
+          {/* SVG in the Middle */}
+          <div
+            style={{
+              margin: "0 10px",
+            }}
+          >
+            {/* Replace with your desired SVG */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-gender-female"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"
+              />
+            </svg>
+          </div>
+
+          {/* Right Line */}
+          <div
+            style={{
+              flex: 1,
+              height: "2px",
+              backgroundColor: "white",
+            }}
+          ></div>
+        </div>
         <div className="row gy-2">
           {/* Button 1 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Trailsession'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Trailsession")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,8 +155,9 @@ export default function Home() {
 
           {/* Button 2 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Fullbody'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Fullbody")}
             >
               <img
                 src="assets/assets/img/fullbody.png"
@@ -130,8 +171,9 @@ export default function Home() {
 
           {/* Button 3 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-             onClick={() => window.location.href = '/Face'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Face")}
             >
               <img
                 src="assets/assets/img/face svg.png"
@@ -145,8 +187,9 @@ export default function Home() {
 
           {/* Button 4 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-             onClick={() => window.location.href = '/Hands'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Hands")}
             >
               <img
                 src="assets/assets/img/hands.png"
@@ -160,8 +203,9 @@ export default function Home() {
 
           {/* Button 5 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Underarms'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Underarms")}
             >
               <img
                 src="assets/assets/img/arm.png"
@@ -174,8 +218,9 @@ export default function Home() {
 
           {/* Button 6 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Legs'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Legs")}
             >
               <img
                 src="assets/assets/img/legs.png"
@@ -189,8 +234,9 @@ export default function Home() {
 
           {/* Button 7 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Back'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Back")}
             >
               <img
                 src="assets/assets/img/Back (2).png"
@@ -203,8 +249,9 @@ export default function Home() {
 
           {/* Button 8 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Bikini'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Bikini")}
             >
               <img
                 src="assets/assets/img/bikini.png"
@@ -217,8 +264,9 @@ export default function Home() {
 
           {/* Button 9 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/ChestAbdomin'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/ChestAbdomin")}
             >
               <img
                 src="assets/assets/img/chest and abdomen.png"
@@ -231,8 +279,9 @@ export default function Home() {
 
           {/* Button 10 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
-            onClick={() => window.location.href = '/Buttocks'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Buttocks")}
             >
               <img
                 src="assets/assets/img/buttocks.png"
@@ -245,8 +294,9 @@ export default function Home() {
 
           {/* Button 11 */}
           <div className="col-6 col-sm-4 col-md-3">
-            <button className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100 margin-left-sm"
-            onClick={() => window.location.href = '/Packages'}
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100 margin-left-sm"
+              onClick={() => (window.location.href = "/Packages")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -262,10 +312,146 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </div>
-<div className="text-center">
-      <span className="badge rounded-pill bg-light text-dark border">Home Service Available Across
-      Banglore</span>
+      
+{/* .............................................. MEN SERVICES............................................................... */}
+      <div className="d-flex align-items-center mt-3">
+        {/* Left Line */}
+        <div
+          style={{
+            flex: 1,
+            height: "2px",
+            backgroundColor: "white",
+          }}
+        ></div>
+
+        {/* SVG in the Middle */}
+        <div
+          style={{
+            margin: "0 10px",
+          }}
+        >
+          {/* Replace with your desired SVG */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-gender-male"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"
+            />
+          </svg>
+        </div>
+
+        {/* Right Line */}
+        <div
+          style={{
+            flex: 1,
+            height: "2px",
+            backgroundColor: "white",
+          }}
+        ></div>
+        </div>
+         <div className="row gy-2">
+
+         <div className="col-6 col-sm-4 col-md-3">
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Trailsessio")}
+            >
+              <img
+                src="assets/assets/img/menleg.png"
+                alt="Button Image"
+                style={{ width: "30px", height: "auto" }}
+              />
+              <span className="ms-2">Legs</span>
+            </button>
+          </div>
+
+          <div className="col-6 col-sm-4 col-md-3">
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Trailsessio")}
+            >
+              <img
+                src="assets/assets/img/manhands.png"
+                alt="Button Image"
+                style={{ width: "30px", height: "auto" }}
+              />
+              <span className="ms-2">Hands</span>
+            </button>
+          </div>
+
+
+          <div className="col-6 col-sm-4 col-md-3">
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Underarm")}
+            >
+              <img
+                src="assets/assets/img/arm.png"
+                alt="Button Image"
+                style={{ width: "30px", height: "auto" }}
+              />
+              <span className="ms-2">Underarms</span>
+            </button>
+          </div>
+
+
+
+          <div className="col-6 col-sm-4 col-md-3">
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Underarm")}
+            >
+              <img
+                src="assets/assets/img/menback.png"
+                alt="Button Image"
+                style={{ width: "30px", height: "auto" }}
+              />
+              <span className="ms-2">Back</span>
+            </button>
+          </div>
+
+
+          <div className="col-6 col-sm-4 col-md-3">
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Underarm")}
+            >
+              <img
+                src="assets/assets/img/beard.png"
+                alt="Button Image"
+                style={{ width: "30px", height: "auto" }}
+              />
+              <span className="ms-2">Beard Shaping</span>
+            </button>
+          </div>
+
+
+          <div className="col-6 col-sm-4 col-md-3">
+            <button
+              className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
+              onClick={() => (window.location.href = "/Underarm")}
+            >
+              <img
+                src="assets/assets/img/menchest.png"
+                alt="Button Image"
+                style={{ width: "30px", height: "auto" }}
+              />
+              <span className="ms-2">Chest&Abdomen</span>
+            </button>
+          </div>
+         </div>
+         </div>
+
+      <div className="text-center">
+        <span className="badge rounded-pill bg-light text-dark border mt-4">
+          Home Service Available Across Bangalore
+        </span>
       </div>
 
       <div
@@ -450,8 +636,7 @@ export default function Home() {
                   </li>
                   <li className="mb-3">
                     <span className="fa-li">
-                      <i className
-                      ="fas fa-envelope"></i>
+                      <i className="fas fa-envelope"></i>
                     </span>
                     <span className="ms-2">contact@flawskin.com</span>
                   </li>
