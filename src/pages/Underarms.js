@@ -32,7 +32,7 @@ export default function Underarms() {
               >
                 <h6>Underarms</h6>
                 <p>
-                  Cost: <del>₹999</del> ₹499
+                  Cost: <del>₹999</del> ₹899
                 </p>
                 <p>
                   <svg
