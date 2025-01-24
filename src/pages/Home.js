@@ -120,9 +120,16 @@ export default function Home() {
                 d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"
               />
             </svg>
-            <div style={{ marginTop: "5px", color: "black", fontSize: "15px",marginLeft:"-10px" }}>
-    Female
-  </div>
+            <div
+              style={{
+                marginTop: "5px",
+                color: "black",
+                fontSize: "15px",
+                marginLeft: "-10px",
+              }}
+            >
+              Female
+            </div>
           </div>
 
           {/* Right Line */}
@@ -315,55 +322,61 @@ export default function Home() {
             </button>
           </div>
         </div>
-      
-{/* .............................................. MEN SERVICES............................................................... */}
-      <div className="d-flex align-items-center mt-3">
-        {/* Left Line */}
-        <div
-          style={{
-            flex: 1,
-            height: "2px",
-            backgroundColor: "white",
-          }}
-        ></div>
 
-        {/* SVG in the Middle */}
-        <div
-          style={{
-            margin: "0 10px",
-          }}
-        >
-          {/* Replace with your desired SVG */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-gender-male"
-            viewBox="0 0 16 16"
+        {/* .............................................. MEN SERVICES............................................................... */}
+        <div className="d-flex align-items-center mt-3">
+          {/* Left Line */}
+          <div
+            style={{
+              flex: 1,
+              height: "2px",
+              backgroundColor: "white",
+            }}
+          ></div>
+
+          {/* SVG in the Middle */}
+          <div
+            style={{
+              margin: "0 10px",
+            }}
           >
-            <path
-              fill-rule="evenodd"
-              d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"
-            />
-          </svg>
-          <div style={{ marginTop: "5px", color: "black", fontSize: "15px",marginLeft:"-10px" }}>
-    Male
-  </div>
-        </div>
+            {/* Replace with your desired SVG */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-gender-male"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"
+              />
+            </svg>
+            <div
+              style={{
+                marginTop: "5px",
+                color: "black",
+                fontSize: "15px",
+                marginLeft: "-10px",
+              }}
+            >
+              Male
+            </div>
+          </div>
 
-        {/* Right Line */}
-        <div
-          style={{
-            flex: 1,
-            height: "2px",
-            backgroundColor: "white",
-          }}
-        ></div>
+          {/* Right Line */}
+          <div
+            style={{
+              flex: 1,
+              height: "2px",
+              backgroundColor: "white",
+            }}
+          ></div>
         </div>
-         <div className="row gy-2">
-
-         <div className="col-6 col-sm-4 col-md-3">
+        <div className="row gy-2">
+          <div className="col-6 col-sm-4 col-md-3">
             <button
               className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
               onClick={() => (window.location.href = "/Trailsessio")}
@@ -391,7 +404,6 @@ export default function Home() {
             </button>
           </div>
 
-
           <div className="col-6 col-sm-4 col-md-3">
             <button
               className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
@@ -405,8 +417,6 @@ export default function Home() {
               <span className="ms-2">Underarms</span>
             </button>
           </div>
-
-
 
           <div className="col-6 col-sm-4 col-md-3">
             <button
@@ -422,7 +432,6 @@ export default function Home() {
             </button>
           </div>
 
-
           <div className="col-6 col-sm-4 col-md-3">
             <button
               className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
@@ -437,7 +446,6 @@ export default function Home() {
             </button>
           </div>
 
-
           <div className="col-6 col-sm-4 col-md-3">
             <button
               className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
@@ -451,8 +459,8 @@ export default function Home() {
               <span className="ms-2">Chest&Abdomen</span>
             </button>
           </div>
-         </div>
-         </div>
+        </div>
+      </div>
 
       <div className="text-center">
         <span className="badge rounded-pill bg-light text-dark border mt-4">
