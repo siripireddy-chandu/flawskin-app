@@ -13,7 +13,7 @@ const Navbar = () => {
   const location = useLocation();
 
   // List of pages where the cart icon should be hidden
-  const hideCartOnPages = ["/home","/AboutUs","/ContactUs","/Requestcall","/"];
+  const hideCartOnPages = ["/home","/AboutUs","/ContactUs","/Requestcall","/","/Privacy"];
 
   // Check if the current pathname matches any of the specified pages
   const hideCart = hideCartOnPages.includes(location.pathname);
@@ -93,6 +93,17 @@ const Navbar = () => {
                 <span className="sr-only">(current)</span>
               </a>
             </li>
+
+ <li
+              className="nav-item"
+              onClick={() => (window.location.href = "/Privacy")}
+            >
+              <a className="nav-link">
+              Privacy & Policy
+                <span className="sr-only">(current)</span>
+              </a>
+            </li>
+
             <li
               className="nav-item"
               onClick={() => (window.location.href = "/Requestcall")}
