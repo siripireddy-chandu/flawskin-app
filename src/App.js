@@ -17,6 +17,7 @@ import Requestcall from './pages/Requestcall';
 import Footer from './pages/Footer';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import Privacy from './pages/Privacy';
 import AdminPortal from './pages/admin2002';
 import NotFoundPage from './pages/notfound';
 
@@ -42,6 +43,7 @@ function App() {
     <Route path="/ChestAbdomin" element={<ChestAbdomen />} />
     <Route path="/Packages" element={<Packages />} />
     <Route path="/Buttocks" element={<Buttocks />} />
+    <Route path="/Privacy" element={<Privacy />} />
     <Route path="/Requestcall" element={<Requestcall />} />
     <Route path="/admin2002" element={<AdminPortal />} />
     <Route path="/form" element={<FormPage />} />
