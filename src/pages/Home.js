@@ -324,24 +324,24 @@ export default function Home() {
         </div>
 
         {/* .............................................. MEN SERVICES............................................................... */}
-        <div className="d-flex align-items-center mt-3">
+        {/* <div className="d-flex align-items-center mt-3"> */}
           {/* Left Line */}
-          <div
+          {/* <div
             style={{
               flex: 1,
               height: "2px",
               backgroundColor: "white",
             }}
-          ></div>
+          ></div> */}
 
           {/* SVG in the Middle */}
-          <div
+          {/* <div
             style={{
               margin: "0 10px",
             }}
-          >
+          > */}
             {/* Replace with your desired SVG */}
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="25"
@@ -353,8 +353,8 @@ export default function Home() {
                 fill-rule="evenodd"
                 d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"
               />
-            </svg>
-            <div
+            </svg> */}
+            {/* <div
               style={{
                 marginTop: "5px",
                 color: "black",
@@ -364,18 +364,18 @@ export default function Home() {
             >
               Male
             </div>
-          </div>
+          </div> */}
 
           {/* Right Line */}
-          <div
+          {/* <div
             style={{
               flex: 1,
               height: "2px",
               backgroundColor: "white",
             }}
           ></div>
-        </div>
-        <div className="row gy-2">
+        </div> */}
+        {/* <div className="row gy-2">
           <div className="col-6 col-sm-4 col-md-3">
             <button
               className="btn btn-light btn-ripple d-flex align-items-center justify-content-between w-100"
@@ -459,7 +459,7 @@ export default function Home() {
               <span className="ms-2">Chest&Abdomen</span>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="text-center">
