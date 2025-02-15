@@ -53,6 +53,20 @@ export default function Privacy() {
             We do not warrant that the quality of any products, services, information, or other material purchased or obtained by you will meet your expectations, or that any errors in the Service will be corrected.
           </p>
 
+          <h2 className="text-primary mb-4">REFUND & CANCELLATION POLICY</h2>
+          <h4 className="text-primary mb-4">Refund Policy</h4>
+          <p>
+            No Refunds: Once a payment has been made, it is non-refundable under any circumstances.
+          </p>
+
+          <h4 className="text-primary mb-4">Cancellation Policy</h4>
+
+
+          <p>
+            Customers must inform us at least 1 hour before the scheduled appointment to cancel or reschedule.
+            Cancellations made less than 1 hour before the appointment will be considered a last-minute cancellation, and the service fee will be charged in full.
+
+          </p>
           <h2 className="text-primary mb-4">ACCURACY OF BILLING AND ACCOUNT INFORMATION</h2>
           <p>
             We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.
