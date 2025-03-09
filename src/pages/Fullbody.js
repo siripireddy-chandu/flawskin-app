@@ -113,7 +113,7 @@ export default function FullBody() {
                 <p>
                   <i className="fa fa-star"> 5.0</i>
                   <a href="https://www.google.com/search?hl=en-IN&amp;gl=in&amp;q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&amp;ludocid=13967352830529973394&amp;lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&amp;ibp=gwp%3B0,7&amp;authuser=2&amp;hl=en&amp;gl=IN#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D">
-                    (170 Reviews)
+                    (176 Reviews)
                   </a>
                 </p>
 
@@ -427,7 +427,7 @@ export default function FullBody() {
                 <p>
                   <i className="fa fa-star"> 5.0</i>
                   <a href="https://www.google.com/search?hl=en-IN&amp;gl=in&amp;q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&amp;ludocid=13967352830529973394&amp;lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&amp;ibp=gwp%3B0,7&amp;authuser=2&amp;hl=en&amp;gl=IN#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D">
-                    (170 Reviews)
+                    (176 Reviews)
                   </a>
                 </p>
 
@@ -740,7 +740,7 @@ export default function FullBody() {
                 <p>
                   <i className="fa fa-star"> 5.0</i>
                   <a href="https://www.google.com/search?hl=en-IN&amp;gl=in&amp;q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&amp;ludocid=13967352830529973394&amp;lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&amp;ibp=gwp%3B0,7&amp;authuser=2&amp;hl=en&amp;gl=IN#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D">
-                    (170 Reviews)
+                    (176 Reviews)
                   </a>
                 </p>
 
@@ -1056,7 +1056,7 @@ export default function FullBody() {
                 <p>
                   <i className="fa fa-star"> 5.0</i>
                   <a href="https://www.google.com/search?hl=en-IN&amp;gl=in&amp;q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&amp;ludocid=13967352830529973394&amp;lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&amp;ibp=gwp%3B0,7&amp;authuser=2&amp;hl=en&amp;gl=IN#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D">
-                    (170 Reviews)
+                    (176 Reviews)
                   </a>
                 </p>
 
@@ -1371,7 +1371,7 @@ export default function FullBody() {
                 <p>
                   <i className="fa fa-star"> 5.0</i>
                   <a href="https://www.google.com/search?hl=en-IN&amp;gl=in&amp;q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&amp;ludocid=13967352830529973394&amp;lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&amp;ibp=gwp%3B0,7&amp;authuser=2&amp;hl=en&amp;gl=IN#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D">
-                    (170 Reviews)
+                    (176 Reviews)
                   </a>
                 </p>
 
@@ -1687,7 +1687,7 @@ export default function FullBody() {
                 <p>
                   <i className="fa fa-star"> 5.0</i>
                   <a href="https://www.google.com/search?hl=en-IN&amp;gl=in&amp;q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&amp;ludocid=13967352830529973394&amp;lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&amp;ibp=gwp%3B0,7&amp;authuser=2&amp;hl=en&amp;gl=IN#lkt=LocalPoiReviews&amp;lpg=cid:CgIgAQ%3D%3D">
-                    (170 Reviews)
+                    (176 Reviews)
                   </a>
                 </p>
 
